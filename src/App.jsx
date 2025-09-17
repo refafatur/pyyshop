@@ -31,19 +31,19 @@ function App() {
       title: "Nyam!",
       subtitle: "Kebutuhan Harian",
       discount: "Diskon s.d. 50%*",
-      img: "./src/assets/food.png",
+      img: "/assets/food.png",
     },
     {
       title: "Fresh!",
       subtitle: "Buah & Sayur",
       discount: "Diskon s.d. 30%*",
-      img: "./src/assets/buah.png",
+      img: "/assets/buah.png",
     },
     {
       title: "Hemat!",
       subtitle: "Minuman Segar",
       discount: "Diskon s.d. 40%*",
-      img: "./src/assets/drink.png",
+      img: "/assets/drink.png",
     },
   ];
 
