@@ -1,0 +1,65 @@
+.pyy-header {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: #ededed;
+  padding: 0 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.pyy-header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 4px;
+}
+
+.pyy-header-promo-bold {
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+}
+
+.pyy-header-promo-normal {
+  color: #222;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+.pyy-header-arrow {
+  margin-left: 4px;
+}
+
+.pyy-header-nav {
+  display: flex;
+  gap: 32px;
+  font-size: 15px;
+}
+
+.pyy-header-nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.pyy-header-nav a:hover {
+  color: #a200cb;
+}
+
+@media (max-width: 900px) {
+  .pyy-header {
+    padding: 0 8px;
+  }
+  .pyy-header-nav {
+    gap: 12px;
+    font-size: 13px;
+  }
+}

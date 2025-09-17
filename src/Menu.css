@@ -1,0 +1,195 @@
+.menu-header {
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 0 #e5e7e9;
+  padding: 0 40px;
+  position: fixed;
+  top: 40px; /* geser ke bawah sesuai tinggi header */
+  left: 0;
+  z-index: 100;
+  gap: 20px;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.logo-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #a200cb;
+  letter-spacing: -1px;
+}
+
+.menu-nav {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-kategori {
+  font-size: 1rem;
+  color: #222;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.menu-kategori:hover {
+  background: #f2fff5;
+}
+
+.menu-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  min-width: 200px;
+  max-width: 900px;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e5e7e9;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 1rem;
+  outline: none;
+  background: #fafbfc;
+  color: #222;
+}
+
+.menu-cart {
+  margin-right: 16px;
+  font-size: 1.5rem;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-popup {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 370px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  padding: 32px 24px 24px 24px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInCart 0.2s;
+}
+
+@keyframes fadeInCart {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-popup-img {
+  width: 80px;
+  margin-bottom: 18px;
+}
+
+.cart-popup-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.cart-popup-desc {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.cart-popup-btn {
+  background: #fff;
+  color: #a200cb;
+  border: 1.5px solid #a200cb;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.cart-popup-btn:hover {
+  background: #a200cb;
+  color: #fff;
+}
+
+.menu-auth {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-masuk {
+  background: #fff;
+  color: #9003ac;
+  border: 1.5px solid #9003ac;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-masuk:hover {
+  background: #f2fff5;
+}
+
+.btn-daftar {
+  background: #9003ac;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-daftar:hover {
+  background: #9003ac;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .menu-header {
+    padding: 0 12px;
+    gap: 10px;
+  }
+  .menu-search {
+    min-width: 100px;
+    max-width: 200px;
+  }
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  .btn-masuk,
+  .btn-daftar {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
