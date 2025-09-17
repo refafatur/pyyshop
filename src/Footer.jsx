@@ -126,7 +126,7 @@ const Footer = () => (
         </div>
         <div className="footer-app-row">
           <img
-            src="./src/assets/qr.png"
+            src="/assets/qr.png"
             alt="QR Pyyshop"
             className="footer-qr"
           />
@@ -136,7 +136,7 @@ const Footer = () => (
               alt="Google Play"
             />
             <img
-              src="./src/assets/apple.png"
+              src="/assets/apple.png"
               alt="App Store"
             />
           </div>
