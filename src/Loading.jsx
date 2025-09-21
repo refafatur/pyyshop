@@ -5,7 +5,7 @@ export default function Loading() {
   return (
     <div className="loading-container">
       <img
-        src="/assets/halo.gif" // GIF loading animasi umum
+        src="/halo.gif" // GIF loading animasi umum
         alt="Loading"
         className="loading-gif"
       />
@@ -17,3 +17,4 @@ export default function Loading() {
     </div>
   );
 }
+
