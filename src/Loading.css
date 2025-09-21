@@ -1,0 +1,65 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+}
+.loading .img {
+    width: auto;
+    height: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.loading-gif {
+  width: auto;
+  height: 30%;
+  margin-bottom: 16px;
+}
+
+.loading-text {
+  display: flex;
+  gap: 6px;
+  font-size: 2.2rem;
+  color: #a200cb00;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* Spesifik hanya untuk dot di loading */
+.loading-text .dot {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background: #a200cb;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: jump 0.8s infinite;
+    vertical-align: middle;
+}
+
+.loading-text .dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.loading-text .dot:nth-child(2) {
+    animation-delay: 0.18s;
+}
+.loading-text .dot:nth-child(3) {
+    animation-delay: 0.36s;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-14px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+}
